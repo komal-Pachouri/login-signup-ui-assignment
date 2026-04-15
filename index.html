@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Signup UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main authentication container -->
+  <div class="container">
+    <h2 id="title">Login</h2>
+    <p id="subtitle">Login to continue</p>
+
+    <form id="authForm">
+      <input type="text" id="name" placeholder="Full Name" style="display:none" />
+      <div id="nameError" class="error"></div>
+
+      <input type="email" id="email" placeholder="Email Address" />
+      <div id="emailError" class="error"></div>
+
+      <input type="password" id="password" placeholder="Password" />
+      <div id="passwordError" class="error"></div>
+
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" style="display:none" />
+      <div id="confirmError" class="error"></div>
+
+      <button type="submit" id="submitBtn">Login</button>
+    </form>
+
+    <div id="success" class="success"></div>
+    <div class="toggle" id="toggleText">Don't have an account? Signup</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
